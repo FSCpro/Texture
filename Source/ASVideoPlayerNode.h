@@ -9,7 +9,7 @@
 
 #import <AsyncDisplayKit/ASAvailability.h>
 
-#if AS_USE_VIDEO
+#if AS_USE_VIDEO && AS_ENABLE_LAYOUTSPECS
 
 #if TARGET_OS_IOS
 #import <CoreMedia/CoreMedia.h>
@@ -222,4 +222,4 @@ NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_END
 #endif  // TARGET_OS_IOS
 
-#endif
+#endif // AS_USE_VIDEO && AS_ENABLE_LAYOUTSPECS
